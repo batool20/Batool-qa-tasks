@@ -11,7 +11,6 @@ describe('task_Selectors', () => {
 
         // Home
         cy.get(".nav-item a").first()
-
         // Sign Up link
         cy.get(".nav-item a").eq(2)
 
