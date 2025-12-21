@@ -4,7 +4,7 @@ describe('automationExerciseTestCases', () => {
     it('Validate that a new user can successfully register using the "Signup / Login" page.', () => {
         cy.visit("https://automationexercise.com/login")
         cy.findByDataQa('signup-name').type("Batool")
-        cy.findByDataQa('signup-email').type("batoolabdallah011@gmail.com")
+        cy.findByDataQa('signup-email').type("batoolabdallah0112@gmail.com")
         cy.findByDataQa('signup-button').click()
         cy.url().should("eq","https://automationexercise.com/signup")
         // Fill in the registration form
@@ -58,7 +58,7 @@ describe('automationExerciseTestCases', () => {
         cy.get("#cartModal .modal-title").should("have.text","Added!")
     });
 
-    it.only('Validate that a logged-in user can add a review to a product', () => {
+    it('Validate that a logged-in user can add a review to a product', () => {
         cy.visit("https://automationexercise.com/login")
         cy.findByDataQa('login-email').type("batoolabdallah09@gmail.com")
         cy.findByDataQa('login-password').type("Batool123!")
